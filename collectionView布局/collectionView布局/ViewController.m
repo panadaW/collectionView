@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+
 @interface ViewController ()
 
 @end
@@ -16,7 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    CGRect rect = CGRectMake(0, 0, 200, 200);
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
+    UICollectionView *collecV = [[UICollectionView alloc]initWithFrame:rect collectionViewLayout:flowLayout];
+    collecV.backgroundColor = [UIColor redColor];
+    [self.view addSubview:collecV];
 }
 
 - (void)didReceiveMemoryWarning {
