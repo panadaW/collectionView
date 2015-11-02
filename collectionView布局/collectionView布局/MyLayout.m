@@ -26,7 +26,7 @@
     for (UICollectionViewLayoutAttributes *attrs in array) {
         CGFloat cat = ABS(attrs.center.x - centerX);
 //        缩放比例
-        CGFloat scale = 1 - cat/(centerX + self.itemSize.width);
+        CGFloat scale = 1 - cat/(self.collectionView.frame.size.width + self.itemSize.width);
         attrs.transform = CGAffineTransformMakeScale(scale, scale);
     }
     
