@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E68058EA1BE79FCB00E1B9D7 /* MyCircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E68058E91BE79FCB00E1B9D7 /* MyCircleLayout.m */; };
+		E68058EF1BE7B26B00E1B9D7 /* MyStackLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E68058EE1BE7B26B00E1B9D7 /* MyStackLayout.m */; };
 		E697796B1BE5C3D800C1275D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E697796A1BE5C3D800C1275D /* main.m */; };
 		E697796E1BE5C3D800C1275D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E697796D1BE5C3D800C1275D /* AppDelegate.m */; };
 		E69779711BE5C3D800C1275D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69779701BE5C3D800C1275D /* ViewController.m */; };
@@ -42,6 +44,10 @@
 		5007B0203AE4BA9A46D80440 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		932B4CB2C3A41D6279C83841 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E55CED4954C8BEEA1708F967 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E68058E81BE79FCB00E1B9D7 /* MyCircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCircleLayout.h; sourceTree = "<group>"; };
+		E68058E91BE79FCB00E1B9D7 /* MyCircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCircleLayout.m; sourceTree = "<group>"; };
+		E68058ED1BE7B26B00E1B9D7 /* MyStackLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStackLayout.h; sourceTree = "<group>"; };
+		E68058EE1BE7B26B00E1B9D7 /* MyStackLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStackLayout.m; sourceTree = "<group>"; };
 		E69779661BE5C3D800C1275D /* collectionView布局.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "collectionView布局.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E697796A1BE5C3D800C1275D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E697796C1BE5C3D800C1275D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -128,6 +134,10 @@
 				E69779A81BE779CA00C1275D /* MyLayout.m */,
 				E697796C1BE5C3D800C1275D /* AppDelegate.h */,
 				E697796D1BE5C3D800C1275D /* AppDelegate.m */,
+				E68058E81BE79FCB00E1B9D7 /* MyCircleLayout.h */,
+				E68058E91BE79FCB00E1B9D7 /* MyCircleLayout.m */,
+				E68058ED1BE7B26B00E1B9D7 /* MyStackLayout.h */,
+				E68058EE1BE7B26B00E1B9D7 /* MyStackLayout.m */,
 				E697796F1BE5C3D800C1275D /* ViewController.h */,
 				E69779701BE5C3D800C1275D /* ViewController.m */,
 				E69779A21BE76F6F00C1275D /* MyCollectionViewCell.h */,
@@ -363,7 +373,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E69779711BE5C3D800C1275D /* ViewController.m in Sources */,
+				E68058EA1BE79FCB00E1B9D7 /* MyCircleLayout.m in Sources */,
 				E697796E1BE5C3D800C1275D /* AppDelegate.m in Sources */,
+				E68058EF1BE7B26B00E1B9D7 /* MyStackLayout.m in Sources */,
 				E697796B1BE5C3D800C1275D /* main.m in Sources */,
 				E69779A51BE76F6F00C1275D /* MyCollectionViewCell.m in Sources */,
 				E69779A91BE779CA00C1275D /* MyLayout.m in Sources */,

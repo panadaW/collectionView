@@ -6,13 +6,15 @@
 //  Copyright © 2015年 晨曦的Mac. All rights reserved.
 //
 
+#import "MyStackLayout.h"
+#import "MyCircleLayout.h"
 #import "ViewController.h"
 #import "MyCollectionViewCell.h"
 #import "MyLayout.h"
 static NSString *registerNib = @"registerNib";
 @interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 @property(nonatomic,strong)NSMutableArray *imageArray;
-
+@property(nonatomic,strong)UICollectionView *collectionview;
 @end
 
 @implementation ViewController
@@ -28,14 +30,25 @@ static NSString *registerNib = @"registerNib";
 - (void)viewDidLoad {
     [super viewDidLoad];
     CGFloat w = self.view.frame.size.width;
-    CGRect rect = CGRectMake(0, 100, w,150);
-    MyLayout *flowLayout = [[MyLayout alloc]init];
+    CGRect rect = CGRectMake(0, 100, w,300);
+     MyCircleLayout*flowLayout = [[MyCircleLayout alloc]init];
     UICollectionView *collectionview = [[UICollectionView alloc]initWithFrame:rect collectionViewLayout:flowLayout];
     collectionview.delegate = self;
     collectionview.dataSource = self;
     [collectionview registerNib:[UINib nibWithNibName:@"MyCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:registerNib];
         [self.view addSubview:collectionview];
+    self.collectionview = collectionview;
     }
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    if ([self.collectionview.collectionViewLayout isKindOfClass:[MyCircleLayout class]]) {
+        [self.collectionview setCollectionViewLayout:[[MyStackLayout alloc]init] animated:YES];
+    } else if ([self.collectionview.collectionViewLayout isKindOfClass:[MyStackLayout class]]) {
+        [self.collectionview setCollectionViewLayout:[[MyLayout alloc]init] animated:YES];
+    } else if ([self.collectionview.collectionViewLayout isKindOfClass:[MyLayout class]]) {
+     [self.collectionview setCollectionViewLayout:[[MyCircleLayout alloc]init] animated:YES];
+    }
+
+}
 
 //数据源方法
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
@@ -48,6 +61,12 @@ static NSString *registerNib = @"registerNib";
         cell.images = self.imageArray[indexPath.row];
     return cell;
 }
+//代理方法
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+//删除点击的cell对应的数据
+    [self.imageArray removeObjectAtIndex:indexPath.item];
+    [self.collectionview deleteItemsAtIndexPaths:@[indexPath] ];
 
+}
 
 @end
