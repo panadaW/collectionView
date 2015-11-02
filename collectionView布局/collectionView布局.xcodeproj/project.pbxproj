@@ -15,6 +15,9 @@
 		E69779791BE5C3D800C1275D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69779771BE5C3D800C1275D /* LaunchScreen.storyboard */; };
 		E69779841BE5C3D900C1275D /* collectionView__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E69779831BE5C3D900C1275D /* collectionView__Tests.m */; };
 		E697798F1BE5C3D900C1275D /* collectionView__UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E697798E1BE5C3D900C1275D /* collectionView__UITests.m */; };
+		E69779A51BE76F6F00C1275D /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E69779A31BE76F6F00C1275D /* MyCollectionViewCell.m */; };
+		E69779A61BE76F6F00C1275D /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69779A41BE76F6F00C1275D /* MyCollectionViewCell.xib */; };
+		E69779A91BE779CA00C1275D /* MyLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E69779A81BE779CA00C1275D /* MyLayout.m */; };
 		F8BCB2A726E32AFF3CA6D356 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5007B0203AE4BA9A46D80440 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -55,6 +58,11 @@
 		E697798A1BE5C3D900C1275D /* collectionView布局UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "collectionView布局UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E697798E1BE5C3D900C1275D /* collectionView__UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = collectionView__UITests.m; sourceTree = "<group>"; };
 		E69779901BE5C3D900C1275D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E69779A21BE76F6F00C1275D /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
+		E69779A31BE76F6F00C1275D /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
+		E69779A41BE76F6F00C1275D /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
+		E69779A71BE779CA00C1275D /* MyLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayout.h; sourceTree = "<group>"; };
+		E69779A81BE779CA00C1275D /* MyLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,10 +124,15 @@
 		E69779681BE5C3D800C1275D /* collectionView布局 */ = {
 			isa = PBXGroup;
 			children = (
+				E69779A71BE779CA00C1275D /* MyLayout.h */,
+				E69779A81BE779CA00C1275D /* MyLayout.m */,
 				E697796C1BE5C3D800C1275D /* AppDelegate.h */,
 				E697796D1BE5C3D800C1275D /* AppDelegate.m */,
 				E697796F1BE5C3D800C1275D /* ViewController.h */,
 				E69779701BE5C3D800C1275D /* ViewController.m */,
+				E69779A21BE76F6F00C1275D /* MyCollectionViewCell.h */,
+				E69779A31BE76F6F00C1275D /* MyCollectionViewCell.m */,
+				E69779A41BE76F6F00C1275D /* MyCollectionViewCell.xib */,
 				E69779721BE5C3D800C1275D /* Main.storyboard */,
 				E69779751BE5C3D800C1275D /* Assets.xcassets */,
 				E69779771BE5C3D800C1275D /* LaunchScreen.storyboard */,
@@ -275,6 +288,7 @@
 			files = (
 				E69779791BE5C3D800C1275D /* LaunchScreen.storyboard in Resources */,
 				E69779761BE5C3D800C1275D /* Assets.xcassets in Resources */,
+				E69779A61BE76F6F00C1275D /* MyCollectionViewCell.xib in Resources */,
 				E69779741BE5C3D800C1275D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +365,8 @@
 				E69779711BE5C3D800C1275D /* ViewController.m in Sources */,
 				E697796E1BE5C3D800C1275D /* AppDelegate.m in Sources */,
 				E697796B1BE5C3D800C1275D /* main.m in Sources */,
+				E69779A51BE76F6F00C1275D /* MyCollectionViewCell.m in Sources */,
+				E69779A91BE779CA00C1275D /* MyLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
